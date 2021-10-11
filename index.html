@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome to Vecta Corp.</title>
+	<!-- Normal style sheet used for layout and general formatting. -->
+	<link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<section id="container">
+		<header></header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="solutions.html">Solutions</a></li>
+				<li><a href="support.html">Support</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+
+		<section id="content" style="position: relative;">
+			<div class="loader" style="position: absolute; height: 100%; background-color: black; width: 100%; color: #fff; display: flex; opacity: 0.4; 
+    align-items: center; justify-content: center;">Loading ...</div>
+			<h2 style="display:flex; align-items: center; justify-content: space-between;">Find Yourself <span class="getMyCoordinates" style="border:1px solid gray; padding: 5px 10px; border-radius: 25px; background-color: red; color: #fff">Find Coordinates</span></h2>
+			<div class="oldLatLongWrapper" style="border-bottom: 1px solid gray; margin-bottom: 5px, padding-bottom: 5px">
+				<div style="font-weight:bold">Old Latitude/Longitude</div>
+				<div class="data"></div>
+			</div>
+			<div style="font-weight:bold">Current Latitude/Longitude</div>
+			<div id="youarehere">Welcome to Find Yourself on Earth using Geo Coordinates</div>
+			<div class="distanceWraper"><span class="distanceInCoordinates"></span><span> (Meter)</span></div>
+		</section>
+
+		<footer></footer>
+	</section>
+
+	<script src="jquery.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
